@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TCHETCHE ORDER LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <form class="login" action="login.html" method="post">
+      <section class="login" id="login">
+          <div class="title">
+              <h2 class="titleText" ><span>ORDER LIST</span></h2>
+          </div>
+          <div class="mode">
+            <span style="color:white;">Dark mode</span>          
+            <span class="change">OFF</span>
+          </div>
+          <div class="contactForm">
+            <div class="inputBox">
+              Mexican Salad<input type="number" placeholder="Mexican Salad" value="0">
+              </div>
+              <div class="inputBox">
+                Chicken Kunafa<input type="number" placeholder="Chicken Kunafa" value="0">
+                </div>
+                <div class="inputBox">
+                  Steak Roll<input type="number" placeholder="Steak Roll" value="0">
+                  </div>
+              
+              <div class="inputBox">
+                  <input type="submit" value="ORDER AND GET THE CHECK">
+              </div>
+              <a href="home.html"><span>B</span>ACK TO HOME</a>
+              <br>
+          </div>
+      </section>
+    </form>
+
+    <script>
+      $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+  </body>
+</html>
